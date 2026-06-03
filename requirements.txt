@@ -1,0 +1,11 @@
+torch
+transformers
+peft
+bitsandbytes
+datasets
+accelerate
+trl
+matplotlib
+huggingface-hub
+pandas
+numpy
