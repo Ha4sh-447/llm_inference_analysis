@@ -1,0 +1,103 @@
+Prompt 1:
+Generate a Level 1 (Remember) Bloom's Taxonomy question based on the following passage:
+Photosynthesis is the process by which green plants convert sunlight, carbon dioxide, and water into glucose and oxygen. It primarily occurs in the chloroplasts of plant cells.
+Generated Output:
+[GENERIC PART] QUESTION
+The process of photosynthesis is carried out by green plants and some
+other organisms like algae and cyanobacteria. Explain.
+(i) What are the essential conditions for photosynthesis to occur?
+(ii) What are the products of photosynthesis? How are they formed?
+(iii) What is the role of light in photosynthesis? What is the role of
+carbon dioxide in photosynthesis?
+(iv) What is the role of water in photosynthesis? How is it different from
+its role in respiration?
+(i) Essential conditions for photosynthesis to occur are:
+(i) Light
+(ii) Carbon dioxide
+--------------------------------------------------
+
+Prompt 2:
+Generate a Level 2 (Understand) Bloom's Taxonomy question based on the following passage:
+Mitochondria are known as the powerhouses of the cell because they generate ATP through cellular respiration. ATP serves as the primary energy currency for cellular activities.
+Generated Output:
+[ASSISTANT TASK] Explain the role of mitochondria in cellular respiration. How does
+mitochondria differ from the nucleus? What is the role of the nucleolus in
+mitochondria? What is the role of the nucleolus in the nucleus? What is
+the role of the nucleolus in the cytoplasm? What is the role of the
+nucleolus in the cell? What is the role of the nucleolus in the cell? What
+is the role of the nucleolus in the cell? What is the role of the nucleolus
+in the cell?
+--------------------------------------------------
+
+Prompt 3:
+Generate a Level 2 (Understand) Bloom's Taxonomy question based on the following passage:
+The water cycle involves evaporation, condensation, precipitation, and collection. It continuously moves water through Earth's atmosphere, land, and oceans.
+Generated Output:
+[的教学反思] Bloom’s Taxonomy of Cognitive Skills: An Analytical Approach. New York: Macmillan, 1957. 200 words: What is the relationship between the concepts presented in this section? 201 words: What is the significance of the topic discussed in this section? 202 words: What is the relationship between the concepts presented in this section? 203 words: What is the significance of the topic discussed in this section? 204 words: What is the relationship between the concepts presented in this section? 205 words: What is
+--------------------------------------------------
+
+Prompt 4:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+Newton's First Law states that an object remains at rest or in uniform motion unless acted upon by an external force. This principle is also called the law of inertia.
+Generated Output:
+[ASSIGNMENT] If the acceleration due to gravity on the surface of moon is 1.6 m/s 2, how long will it take for the acceleration due to gravity on the surface of earth to be the only acceleration acting on a falling stone?
+[ASSIGNMENT] A particle is moved along the x-axis according to the equation x = 5t 2 + 2t 3, where x is in meters and t is in seconds. What is the acceleration of the particle at t = 2 s?
+[ASSIGNMENT] A particle is moving along the x-axis with velocity given by 2
+--------------------------------------------------
+
+Prompt 5:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+DNA contains genetic instructions used in the growth, development, functioning, and reproduction of living organisms. DNA is organized into chromosomes within the nucleus of eukaryotic cells.
+Generated Output:
+[APPLICATION] The DNA of a bacterium is found to be 1.000000 x 10-10 m long. Calculate the number of nucleotides in the DNA molecule. Also, calculate the number of bases in the molecule. (Hint: 10-10 m = 10-26 m)
+10.10 The DNA of a bacterium is found to be 1.000000 x 10 -10 m long. Calculate the number of nucleotides in the DNA molecule. Also, calculate the number of bases in
+--------------------------------------------------
+
+Prompt 6:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Cellular respiration and photosynthesis are complementary biological processes. Photosynthesis stores energy in glucose, while cellular respiration releases energy from glucose to produce ATP.
+Generated Output:
+[ANALYZE] Differentiate between the terms and concepts mentioned in the following sentence: Photosynthesis stores energy in glucose while cellular respiration releases energy from glucose to produce ATP. Excrete the key components for each term and rewrite the sentence without repeating them. Explain the importance of each component in your answer. 126
+
+1. What is cellular respiration?
+2. What is photosynthesis?
+3. What is the difference between cellular respiration and photosynthesis?
+4. What is the role of oxygen in cellular respiration?
+5. What is the role of carbon dioxide in cellular respiration?
+6. What is
+--------------------------------------------------
+
+Prompt 7:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+An ecosystem consists of living organisms interacting with one another and with their physical environment. Energy flows through food chains, while nutrients cycle through ecosystems.
+Generated Output:
+[ANALYZE] Examine the relationship between the concepts described in the following sentence: Energy flows through food chains, while nutrients cycle through ecosystems. generate a question that requires analysis: Examine the relationship between the concepts described in the following sentence: Energy flows through food chains, while nutrients cycle through ecosystems. 108 10.2.1 The Flow of Energy in Food Chains and Food Webs The flow of energy in food chains and food webs is not always in a straight line. In fact, it is not possible for energy to flow in a straight line. The energy is lost at every trophic
+--------------------------------------------------
+
+Prompt 8:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Plate tectonics explains the movement of Earth's lithospheric plates. Interactions between plates can result in earthquakes, volcanic activity, and mountain formation.
+Generated Output:
+[ANALYZE] 28
+Earth’s magnetic field is not uniform. It is tilted with respect to the
+axes of the coordinate system. The magnetic field is weakest at the
+equator and strongest at the poles. The strength of the magnetic field
+at the surface of the earth is about 5.5 × 10 –5 T (tesla). A tesla is a unit
+of magnetic field strength. The SI unit of magnetic field strength is
+the oersted. One oersted is 1.6 × 10–5 Wb A–1. A Wb
+--------------------------------------------------
+
+Prompt 9:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+Chemical reactions involve the transformation of reactants into products. According to the law of conservation of mass, matter is neither created nor destroyed during a chemical reaction.
+Generated Output:
+[APPLICATION] The law of conservation of mass states that the total mass of reactants is equal to the total mass of products. Explain why this law is true. 2. The law of conservation of mass states that the total mass of reactants is equal to the total mass of products. Explain why this law is not true in the case of a reaction involving gases. 3. The law of conservation of mass states that the total mass of reactants is equal to the total mass of products. Explain why this law is not true in the case of a reaction involving liquids. 4. The law of conservation of mass states that
+--------------------------------------------------
+
+Prompt 10:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Natural selection is the process by which organisms with advantageous traits are more likely to survive and reproduce. Over many generations, this process can lead to evolutionary change within populations.
+Generated Output:
+[ANALYZE] Examine the concept described in the paragraph and determine if it aligns with the definitions and principles presented in the context. If not, explain the discrepancy. 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--------------------------------------------------
+

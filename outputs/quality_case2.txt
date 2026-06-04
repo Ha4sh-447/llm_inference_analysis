@@ -1,0 +1,246 @@
+Prompt 1:
+Generate a Level 1 (Remember) Bloom's Taxonomy question based on the following passage:
+Photosynthesis is the process by which green plants convert sunlight, carbon dioxide, and water into glucose and oxygen. It primarily occurs in the chloroplasts of plant cells.
+Generated Output:
+[REMEMBER] Which of the following is not a product of photosynthesis?
+a.
+Glucose
+b.
+Oxygen
+c.
+Water
+d.
+ATP
+
+26
+
+Plants are the most conspicuous autotrophic organisms on earth. They
+are the most important producers of oxygen in the atmosphere. They are
+also the most important food source for other organisms. The green
+plants have evolved different strategies to adapt to the changing
+environment. They have evolved different types of tissues and
+structures to fulfil their ecological roles. The green plants are divided
+into two kingdoms, the Bryophytes and the Ang
+--------------------------------------------------
+
+Prompt 2:
+Generate a Level 2 (Understand) Bloom's Taxonomy question based on the following passage:
+Mitochondria are known as the powerhouses of the cell because they generate ATP through cellular respiration. ATP serves as the primary energy currency for cellular activities.
+Generated Output:
+[REMEMBER] Mitochondria are known as the powerhouses of the cell because they
+generate ATP through cellular respiration. What is the role of ATP in
+cellular activities? Name the two stages in respiration where ATP is
+generated. 106
+
+Exemplar Problems–Biology
+TAXONOMY AND EVOLUTION
+107
+
+SET I
+GENERAL KNOWLEDGE
+Q1.
+Which of the following is not a genus name?
+(i) Homo
+(ii) Pteropus
+(iii) Pachycephalus
+(iv) Pecten
+Q2.
+
+--------------------------------------------------
+
+Prompt 3:
+Generate a Level 2 (Understand) Bloom's Taxonomy question based on the following passage:
+The water cycle involves evaporation, condensation, precipitation, and collection. It continuously moves water through Earth's atmosphere, land, and oceans.
+Generated Output:
+[REMEMBER] Which of the following is not a component of water cycle?
+(i) Evaporation
+(ii) Condensation
+(iii) Precipitation
+(iv) Absorption
+90
+90
+Physical World & Measurement
+Exemplar Problems–Physics
+CHAPTER EIGHT
+WATER CYCLE
+(i) Evaporation
+(ii) Condensation
+(iii) Precipitation
+(iv) Absorption
+90
+90
+Physical World & Measurement
+Exemplar Problems–Physics
+CHAPTER EIGHT
+WATER CYCLE
+8.2 Evaporation
+Evaporation is the process of changing
+--------------------------------------------------
+
+Prompt 4:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+Newton's First Law states that an object remains at rest or in uniform motion unless acted upon by an external force. This principle is also called the law of inertia.
+Generated Output:
+[APPLY] 24
+An object of mass m is raised from the surface of the earth to a
+height equal to the radius of the earth (R). What is the change in
+potential energy of the object? Gravitation
+Explain the following terms:
+a.
+Potential energy
+b.
+Gravitational potential energy
+c.
+Mechanical energy
+d.
+Total energy
+e.
+Inertial mass
+f.
+Gravitational mass
+Fifty years ago, the average man walked 10,000 steps a day. Now,
+it is closer to 8,000.
+--------------------------------------------------
+
+Prompt 5:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+DNA contains genetic instructions used in the growth, development, functioning, and reproduction of living organisms. DNA is organized into chromosomes within the nucleus of eukaryotic cells.
+Generated Output:
+[APPLY] What is the difference between DNA and RNA? Write the structure of
+DNA molecule. How is it stored in the cell? How is it replicated? How
+is the genetic information passed on to the next generation? 116
+
+Explain the following terms:
+a.
+Genotype
+b.
+Phenotype
+c.
+Dominant
+d.
+Recessive
+e.
+Homozygous
+f.
+Heterozygous
+f.
+Chromosomal behaviour during meiosis
+g.
+Chromosomal behaviour during mitosis
+h.
+Chromosomal behaviour during gamete formation
+i
+--------------------------------------------------
+
+Prompt 6:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Cellular respiration and photosynthesis are complementary biological processes. Photosynthesis stores energy in glucose, while cellular respiration releases energy from glucose to produce ATP.
+Generated Output:
+[ANALYZE] What is the relationship between the factors described in: 'Photosynthesis stores energy in glucose, while cellular respiration releases energy from glucose to produce ATP'? Examine this assertion and explain its validity. 186 Exemplar Problems, Chemistry
+
+608
+
+608
+
+608
+
+608
+
+Exemplar Problems – Chemistry
+
+EXEMPLAR PROBLEMS
+
+60
+
+P
+
+H
+
+O
+
+S
+
+ystem
+
+608
+
+608
+
+608
+
+608
+
+Chemistry
+
+Give an example of a process in which the first
+--------------------------------------------------
+
+Prompt 7:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+An ecosystem consists of living organisms interacting with one another and with their physical environment. Energy flows through food chains, while nutrients cycle through ecosystems.
+Generated Output:
+[ANALYZE] What is the relationship between the factors mentioned in: 'An ecosystem consists of living organisms interacting with one another and with their physical environment'? 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--------------------------------------------------
+
+Prompt 8:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Plate tectonics explains the movement of Earth's lithospheric plates. Interactions between plates can result in earthquakes, volcanic activity, and mountain formation.
+Generated Output:
+[ANALYZE] What is the relationship between the factors described in: 'Interactions between plates can result in earthquakes, volcanic activity, and mountain formation'? 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--------------------------------------------------
+
+Prompt 9:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+Chemical reactions involve the transformation of reactants into products. According to the law of conservation of mass, matter is neither created nor destroyed during a chemical reaction.
+Generated Output:
+[APPLY] The law of conservation of mass states that matter is neither created nor destroyed during a chemical reaction. Explain. 106 Exemplar Problems, Chemistry
+
+510
+Write the names of the following compounds with their IUPAC names:
+(i) 2,3-Dimethylbutane
+(ii) 2-Methyl-3-ethylpentane
+(iii) 2-Methyl-3-methyloctane
+(iv) 2-Methyl-3-ethylheptane
+(v) 2-Methyl-3-ethyl-4-methyloctane
+
+--------------------------------------------------
+
+Prompt 10:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Natural selection is the process by which organisms with advantageous traits are more likely to survive and reproduce. Over many generations, this process can lead to evolutionary change within populations.
+Generated Output:
+[ANALYZE] What is the relationship between the factors described in: 'Over many generations, this process can lead to evolutionary change within populations'? 100
+
+20
+
+30
+
+40
+
+50
+
+60
+
+70
+
+80
+
+90
+
+900 km h–1
+
+1000 km h–1
+
+1200 km h–1
+
+1400 km h–1
+
+1600 km h–1
+
+1800 km h–1
+
+2000 km h–1
+
+2200 km h
+--------------------------------------------------
+

@@ -9,3 +9,5 @@ matplotlib
 huggingface-hub
 pandas
 numpy
+autoawq
+vllm>=0.22.0

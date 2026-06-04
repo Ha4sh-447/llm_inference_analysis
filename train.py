@@ -1,79 +1,88 @@
-from transformers import TrainingArguments
+"""
+train.py — QLoRA fine-tuning of Qwen2.5-1.5B for Bloom's Taxonomy question generation.
+
+Uses 4-bit NormalFloat quantization (NF4) + LoRA adapters to fit training within
+4 GB VRAM on an RTX 3050. Produces loss curves and saves the final adapter weights.
+"""
+
 import os
 import torch
-from datasets import load_dataset
-from peft import get_peft_model, LoraConfig, prepare_model_for_kbit_training
-from transformers import AutoModelForCausalLM
-from transformers import AutoTokenizer
-from transformers import BitsAndBytesConfig
-from trl import SFTConfig, SFTTrainer
 import matplotlib.pyplot as plt
+from datasets import load_dataset
+from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
+from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from trl import SFTConfig, SFTTrainer
 
-model_id = "Qwen/Qwen2.5-1.5B"
+MODEL_ID = "Qwen/Qwen2.5-1.5B"
+DATASET_TRAIN = "./dataset/data.json"
+DATASET_VAL = "./dataset/val.json"
+OUTPUT_DIR = "./models/qwen-1.5b-blooms-lora"
+ADAPTER_SAVE_DIR = "./final_models/qwen_blooms_lora_final"
+TOKENIZER_SAVE_DIR = "./final_tokenizers/qwen_blooms_lora_final"
 
-# load tokenizer
-tokenizer = AutoTokenizer.from_pretrained(model_id)
+# ── Tokenizer ────────────────────────────────────────────────────────────────
+tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
 
+# ── 4-bit Quantized Base Model ───────────────────────────────────────────────
 bnb_config = BitsAndBytesConfig(
-        load_in_4bit=True,
-        bnb_4bit_quant_type="nf4",
-        bnb_4bit_use_double_quant=True,
-        bnb_4bit_compute_dtype=torch.bfloat16
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_use_double_quant=True,
+    bnb_4bit_compute_dtype=torch.bfloat16,
 )
 
 model = AutoModelForCausalLM.from_pretrained(
-        model_id,
-        quantization_config=bnb_config,
-        device_map="cuda:0",
+    MODEL_ID,
+    quantization_config=bnb_config,
+    device_map="cuda:0",
 )
+print(f"Base model memory footprint: {model.get_memory_footprint() / 1e6:.1f} MB")
 
-
-print(f"Model memory: {model.get_memory_footprint()/1e6}")
-
-
-# Lora training
+# ── LoRA Adapter ─────────────────────────────────────────────────────────────
 model = prepare_model_for_kbit_training(model, use_gradient_checkpointing=True)
 model.gradient_checkpointing_enable()
 
-# Lora config
-lora_config= LoraConfig(
-    r = 16,
-        lora_alpha=32,
-        target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
-        lora_dropout=0.05,
-        bias="none",
-        task_type="CAUSAL_LM"
+lora_config = LoraConfig(
+    r=16,
+    lora_alpha=32,
+    target_modules=["q_proj", "k_proj", "v_proj", "o_proj"],
+    lora_dropout=0.05,
+    bias="none",
+    task_type="CAUSAL_LM",
 )
-
 model = get_peft_model(model, lora_config)
-print(f"New training params after lora: {model.print_trainable_parameters()}")
+model.print_trainable_parameters()
 
-# Load Dataset
-dataset = load_dataset("json", data_files="./dataset/blooms_4level_train.json", split="train")
-eval_dataset = load_dataset("json", data_files="./dataset/blooms_4level_val.json", split="train")
+# ── Dataset ──────────────────────────────────────────────────────────────────
+dataset = load_dataset("json", data_files=DATASET_TRAIN, split="train")
+eval_dataset = load_dataset("json", data_files=DATASET_VAL, split="train")
 
-# format of training data
+
 def format_prompt(example):
-    formatted_text = (
-        f"<|im_start|>system\nYou are an educational assistant generating questions aligned with Bloom's Taxonomy.<|im_end|>\n"
-        f"<|im_start|>user\n{example['input_text']}<|im_end|>\n"
-        f"<|im_start|>assistant\n{example['target_text']}{tokenizer.eos_token}"
-    )
-    return {"text": formatted_text}
+    """Format a dataset row into the Qwen ChatML template."""
+    return {
+        "text": (
+            f"<|im_start|>system\nYou are an educational assistant generating questions "
+            f"aligned with Bloom's Taxonomy.<|im_end|>\n"
+            f"<|im_start|>user\n{example['input_text']}<|im_end|>\n"
+            f"<|im_start|>assistant\n{example['target_text']}{tokenizer.eos_token}"
+        )
+    }
+
 
 formatted_dataset = dataset.map(format_prompt)
 formatted_eval_dataset = eval_dataset.map(format_prompt)
 
-# Training arguments
+# ── Training ─────────────────────────────────────────────────────────────────
 training_args = SFTConfig(
-    output_dir="./models/qwen-1.5b-blooms-lora",
+    output_dir=OUTPUT_DIR,
     per_device_train_batch_size=1,
     gradient_accumulation_steps=8,
     learning_rate=2e-4,
     logging_steps=10,
-    num_train_epochs=3, 
+    num_train_epochs=3,
     save_steps=500,
     optim="paged_adamw_8bit",
     bf16=True,
@@ -86,7 +95,6 @@ training_args = SFTConfig(
     per_device_eval_batch_size=1,
 )
 
-# Trainer
 trainer = SFTTrainer(
     model=model,
     train_dataset=formatted_dataset,
@@ -94,32 +102,32 @@ trainer = SFTTrainer(
     args=training_args,
 )
 
-# Empty the cache
 torch.cuda.empty_cache()
-print("Starting training")
+print("Starting training...")
 trainer.train()
-# --- Generating Training and Eval Loss Graphs ---
-print("Generating training graphs...")
+
+# ── Loss Curves ──────────────────────────────────────────────────────────────
+print("Generating training loss graph...")
 log_history = trainer.state.log_history
-train_loss_data = [(log['step'], log['loss']) for log in log_history if 'loss' in log]
-eval_loss_data = [(log['step'], log['eval_loss']) for log in log_history if 'eval_loss' in log]
+train_loss = [(log["step"], log["loss"]) for log in log_history if "loss" in log]
+eval_loss = [(log["step"], log["eval_loss"]) for log in log_history if "eval_loss" in log]
 
 plt.figure(figsize=(10, 5))
-if train_loss_data:
-    t_steps, t_losses = zip(*train_loss_data)
-    plt.plot(t_steps, t_losses, label="Training Loss", color='blue')
-if eval_loss_data:
-    e_steps, e_losses = zip(*eval_loss_data)
-    plt.plot(e_steps, e_losses, label="Eval Loss", color='orange', marker='o')
-
+if train_loss:
+    steps, losses = zip(*train_loss)
+    plt.plot(steps, losses, label="Training Loss", color="blue")
+if eval_loss:
+    steps, losses = zip(*eval_loss)
+    plt.plot(steps, losses, label="Eval Loss", color="orange", marker="o")
 plt.xlabel("Steps")
 plt.ylabel("Loss")
-plt.title("Qwen2.5-1.5B Bloom's Taxonomy QLoRA Loss")
+plt.title("Qwen2.5-1.5B Bloom's Taxonomy QLoRA — Training Loss")
 plt.legend()
 plt.grid(True)
-plt.savefig("./training_loss_graph.png")
-print("Training graph saved as training_loss_graph.png")
-# Save the final adapter weights
-trainer.model.save_pretrained("./final_models/qwen_blooms_lora_final")
-tokenizer.save_pretrained("./final_tokenizers/qwen_blooms_lora_final")
-print("Training complete and adapter saved!")
+plt.savefig("./outputs/training_loss_graph.png")
+print("Loss graph saved to outputs/training_loss_graph.png")
+
+# ── Save Adapter ─────────────────────────────────────────────────────────────
+trainer.model.save_pretrained(ADAPTER_SAVE_DIR)
+tokenizer.save_pretrained(TOKENIZER_SAVE_DIR)
+print(f"Training complete. Adapter saved to {ADAPTER_SAVE_DIR}")

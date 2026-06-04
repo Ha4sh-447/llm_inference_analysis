@@ -1,0 +1,172 @@
+Prompt 1:
+Generate a Level 1 (Remember) Bloom's Taxonomy question based on the following passage:
+Photosynthesis is the process by which green plants convert sunlight, carbon dioxide, and water into glucose and oxygen. It primarily occurs in the chloroplasts of plant cells.
+Generated Output:
+[REMEMBER] Which of the following is not a product of photosynthesis?
+a.
+Glucose
+b.
+Oxygen
+c.
+Water
+d.
+ATP
+
+26
+
+Plants are the most conspicuous autotrophic organisms on earth. They
+are green, multicellular or unicellular, e.g., green algae, bryophytes, pteridophytes,
+gymnosperms and angiosperms. They are the most abundant and widely
+distributed organisms on earth. They are the most important producers of
+oxygen on earth. They are the most conspicuous consumers of sunlight.
+Plants
+--------------------------------------------------
+
+Prompt 2:
+Generate a Level 2 (Understand) Bloom's Taxonomy question based on the following passage:
+Mitochondria are known as the powerhouses of the cell because they generate ATP through cellular respiration. ATP serves as the primary energy currency for cellular activities.
+Generated Output:
+[REMEMBER] Mitochondria are known as the powerhouses of the cell because they
+generate ATP through cellular respiration. What is the role of ATP in
+cellular activities? Name the two stages in cellular respiration where
+ATP is generated. Name the organelle where the process of
+respiration takes place. Name the two stages in respiration where
+carbon dioxide is released. Name the stage where oxygen is used and
+released. Name the stage where carbon dioxide is produced and
+oxygen is used. Name the stage where carbon dioxide is produced and
+oxygen is released. Name the stage where
+--------------------------------------------------
+
+Prompt 3:
+Generate a Level 2 (Understand) Bloom's Taxonomy question based on the following passage:
+The water cycle involves evaporation, condensation, precipitation, and collection. It continuously moves water through Earth's atmosphere, land, and oceans.
+Generated Output:
+[REMEMBER] Which of the following is not a component of water cycle?
+(i) Evaporation
+(ii) Condensation
+(iii) Precipitation
+(iv) Absorption
+(iv) Absorption
+
+106
+
+Physical World and Measurements
+
+Physical World and Measurements
+
+Physical World and Measurements
+
+Physical World and Measurements
+
+6.2.1 Water Cycle
+
+Evaporation
+
+(i) Evaporation
+
+(ii) Condensation
+
+(iii) Precipitation
+
+(iv) Absorption
+
+(iv) Absorption
+
+56
+
+Physical World and Measurements
+
+6.2.2 Water Cycle
+
+Water cycle involves evaporation,
+--------------------------------------------------
+
+Prompt 4:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+Newton's First Law states that an object remains at rest or in uniform motion unless acted upon by an external force. This principle is also called the law of inertia.
+Generated Output:
+[APPLY] 25
+An object of mass m is raised from the surface of the earth to a
+height equal to the radius of the earth (R). What is the mass of the
+object’s kinetic energy at the new location if its kinetic energy at
+the original location was E? What is the difference between the
+two energies E and K ? (The total energy of the earth–satellite
+system is constant). Answer the above question for the satellite that
+is orbiting the earth at a distance equal to the radius of the earth
+from the centre of the earth. (Reprint of Phys.
+--------------------------------------------------
+
+Prompt 5:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+DNA contains genetic instructions used in the growth, development, functioning, and reproduction of living organisms. DNA is organized into chromosomes within the nucleus of eukaryotic cells.
+Generated Output:
+[APPLY] What is the difference between DNA and RNA? Explain the structure of
+DNA molecule. Also, mention the sequence of nucleotides in DNA.
+
+66
+CHAPTER
+EIGHT
+GENETIC CODE AND GENETIC RECOMBINATION
+
+67
+5.2
+GENETIC CODE
+5.2.1
+What is Genetic Code?
+The genetic code is the set of rules that specify the sequence of
+amino acids in a polypeptide chain. The genetic code is the code
+that is used by the cell to translate the genetic information in DNA
+into a polypeptide chain
+--------------------------------------------------
+
+Prompt 6:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Cellular respiration and photosynthesis are complementary biological processes. Photosynthesis stores energy in glucose, while cellular respiration releases energy from glucose to produce ATP.
+Generated Output:
+[ANALYZE] What is the relationship between the factors described in: 'Photosynthesis stores energy in glucose, while cellular respiration releases energy from glucose to produce ATP'? Examine this assertion and explain its validity. 266
+
+Explain briefly the role of ATP in cellular respiration. 267
+Define photosynthesis. What is the significance of photosynthesis in
+the ecosystem? 268
+Give a brief account of the following:
+(i) Respiration
+(ii) Respiration in plants
+(iii) Respiration in animals
+(iv) Respiration in fungi
+(v) Respiration in
+--------------------------------------------------
+
+Prompt 7:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+An ecosystem consists of living organisms interacting with one another and with their physical environment. Energy flows through food chains, while nutrients cycle through ecosystems.
+Generated Output:
+[ANALYZE] What is the relationship between the factors described in: 'An ecosystem consists of living organisms interacting with one another and with their physical environment'? 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--------------------------------------------------
+
+Prompt 8:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Plate tectonics explains the movement of Earth's lithospheric plates. Interactions between plates can result in earthquakes, volcanic activity, and mountain formation.
+Generated Output:
+[ANALYZE] What is the relationship between the factors described in: 'Interactions between plates can result in earthquakes, volcanic activity, and mountain formation'? 1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--------------------------------------------------
+
+Prompt 9:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+Chemical reactions involve the transformation of reactants into products. According to the law of conservation of mass, matter is neither created nor destroyed during a chemical reaction.
+Generated Output:
+[APPLY] The law of conservation of mass states that matter is neither created nor destroyed during a chemical reaction. Explain. 106 Exemplar Problems, Chemistry
+
+510
+CHAPTE
+RESONANCE IN MOLECULES
+18.1 MOTION OF ELECTRONS IN ORBITAL
+In the previous chapter, we have learnt that electrons are present in the orbitals. The orbital is a three-dimensional region around the nucleus in which there is a high probability of finding the electron. The shape of the orbital is determined by the wave function of the electron. The wave function is a mathematical
+--------------------------------------------------
+
+Prompt 10:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Natural selection is the process by which organisms with advantageous traits are more likely to survive and reproduce. Over many generations, this process can lead to evolutionary change within populations.
+Generated Output:
+[ANALYZE] What is the relationship between the factors described in: 'Over many generations, this process can lead to evolutionary change within populations'? 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--------------------------------------------------
+

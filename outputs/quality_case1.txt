@@ -1,0 +1,177 @@
+Prompt 1:
+Generate a Level 1 (Remember) Bloom's Taxonomy question based on the following passage:
+Photosynthesis is the process by which green plants convert sunlight, carbon dioxide, and water into glucose and oxygen. It primarily occurs in the chloroplasts of plant cells.
+Generated Output:
+[REMEMBER & UNDERSTAND] What is the process by which green plants convert sunlight, carbon dioxide
+and water into glucose and oxygen? Give a brief account of the process.
+
+106
+
+Plants are green in colour because they contain chlorophyll. Chlorophyll
+is a green coloured pigment. The green colour of the plant is due to the
+presence of chlorophyll. The green colour is not due to the presence of
+chlorophyll in other parts of the plant. The green colour is due to the
+presence of chlorophyll in the leaves. The leaves of the plant are green
+
+--------------------------------------------------
+
+Prompt 2:
+Generate a Level 2 (Understand) Bloom's Taxonomy question based on the following passage:
+Mitochondria are known as the powerhouses of the cell because they generate ATP through cellular respiration. ATP serves as the primary energy currency for cellular activities.
+Generated Output:
+[REMEMBER & UNDERSTAND] ATP is the primary energy currency of the cell. Name the two ways
+through which ATP is generated. 22
+
+Explain the following:
+a.
+Mitochondria
+b.
+Nucleus
+c.
+Ribosomes
+d.
+Golgi apparatus
+e.
+Lysosomes
+f.
+Plastids
+f.
+Plastids
+
+23
+
+SET N
+
+24
+
+110
+Write down the differences between:
+(i)
+Prokaryotes and eukaryotes
+(ii)
+Prokaryotic cell and eukaryotic cell
+(iii
+--------------------------------------------------
+
+Prompt 3:
+Generate a Level 2 (Understand) Bloom's Taxonomy question based on the following passage:
+The water cycle involves evaporation, condensation, precipitation, and collection. It continuously moves water through Earth's atmosphere, land, and oceans.
+Generated Output:
+[REMEMBER & UNDERSTAND] The water cycle involves evaporation, condensation, precipitation, and
+collection. It continuously moves water through Earth’s atmosphere,
+land and oceans. What are the components of the water cycle? Give
+brief description of each component. 210
+
+Exemplar Problems, Chemistry
+118
+118
+Evaporation and Condensation
+The process of evaporation is the first step in the water cycle. It is the
+evaporation of water from the surface of the earth into the atmosphere
+that leads to the formation of clouds. Evaporation is the process of
+
+--------------------------------------------------
+
+Prompt 4:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+Newton's First Law states that an object remains at rest or in uniform motion unless acted upon by an external force. This principle is also called the law of inertia.
+Generated Output:
+[APPLY] A car is moving with a uniform speed of 36 km/h. What is the distance it will cover in 0.25 hours if the driver brakes and the car comes to rest in 10 seconds? What is the average retardation of the car? 10.2 MOTION IN A STRAIGHT LINE In this section, we will study how to describe motion of an object which moves in a straight line. Consider a child riding on a cart pulled by an adult. The cart is moving uniformly. The child can kick the cart to make it to move in some other way. In
+--------------------------------------------------
+
+Prompt 5:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+DNA contains genetic instructions used in the growth, development, functioning, and reproduction of living organisms. DNA is organized into chromosomes within the nucleus of eukaryotic cells.
+Generated Output:
+[APPLY] What is the role of chromosomes in eukaryotic cells? How do they help
+in reproduction? Name the two types of chromosomes present in a
+eukaryotic cell. What are their functions? What are the other types of
+chromosomes? Name them. 116
+
+Explain the following terms:
+a.
+Chromosome
+b.
+Chromatin
+c.
+Nucleus
+200
+
+GUARDIAN CELL
+Plastids
+Chloroplasts
+Mitochondria
+Ribosomes
+Nucleus
+Chromosomes
+Chromatin
+Chromatids
+--------------------------------------------------
+
+Prompt 6:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Cellular respiration and photosynthesis are complementary biological processes. Photosynthesis stores energy in glucose, while cellular respiration releases energy from glucose to produce ATP.
+Generated Output:
+[ANALYZE] What is the relationship between the factors described in: 'Photosynthesis stores energy in glucose, while cellular respiration releases energy from glucose to produce ATP'? Exemplify. 26 Examine the following statement and state whether it is true or false. ‘Photosynthesis stores energy in glucose’. Explain. 27 Explain the following statement. ‘Photosynthesis is a light dependent process’. 28 What is the relationship between the following statements? a.
+Photosynthesis is a light dependent process.
+b.
+Cellular respiration is a light independent process.
+c.
+Photosynthesis stores energy in glucose.
+d
+--------------------------------------------------
+
+Prompt 7:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+An ecosystem consists of living organisms interacting with one another and with their physical environment. Energy flows through food chains, while nutrients cycle through ecosystems.
+Generated Output:
+[ANALYZE] What patterns can you identify from the fact that energy flows through food chains, while nutrients cycle through ecosystems? 26 Exemplar Problems, Chemistry
+CHAPTER TWELVE
+ECOSYSTEM AND ECOCYCLE
+
+160
+ECOSYSTEM AND ECOCYCLE
+Structure of an ecosystem
+An ecosystem consists of living organisms and their physical
+and chemical environment. The living organisms are of two
+types: producers and consumers. Producers are organisms which
+are capable of photosynthesis. Consumers are organisms which
+are not capable of photosynthesis but are heterotrophs. The
+
+--------------------------------------------------
+
+Prompt 8:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Plate tectonics explains the movement of Earth's lithospheric plates. Interactions between plates can result in earthquakes, volcanic activity, and mountain formation.
+Generated Output:
+[ANALYZE] What patterns can you identify from the fact that interactions between plates can result in earthquakes, volcanic activity, and mountain formation? 30 Exemplar Problems, Physics
+CHAPTER TWELVE
+EARTH AND MOONS SYSTEMS 100 100 Earth and Moon System 200 200 Solar System 300 300 Interstellar System Earth is the third planet from the Sun and is a roughly spherical body with a diameter of 12,742 km. The average density of the Earth is 5.527 g cm –
+--------------------------------------------------
+
+Prompt 9:
+Generate a Level 3 (Apply) Bloom's Taxonomy question based on the following passage:
+Chemical reactions involve the transformation of reactants into products. According to the law of conservation of mass, matter is neither created nor destroyed during a chemical reaction.
+Generated Output:
+[APPLY] What is the significance of the law of conservation of mass? Write a
+short note on the law of conservation of mass. 10.10 Chemical Equilibrium 189 Chemical reactions are accompanied by changes in physical states of the reactants and products. For example, a solid and a liquid may combine to form a gas. The physical state of the reactants and products is called their phase. The phase of a substance is determined by the temperature of the substance. For example, water is a liquid at 25°C but a gas at 100°C. The temperature of a substance
+--------------------------------------------------
+
+Prompt 10:
+Generate a Level 4 (Analyze) Bloom's Taxonomy question based on the following passage:
+Natural selection is the process by which organisms with advantageous traits are more likely to survive and reproduce. Over many generations, this process can lead to evolutionary change within populations.
+Generated Output:
+[ANALYZE] What patterns can you identify from the fact that over many generations, this process can lead to evolutionary change within populations? 30 Exemplar Problems, Biology
+CHAPTER TWELVE
+EVOLUTION AND EVOLVING POPULATIONS
+
+216 Exemplar Problems, Biology
+CHAPTER TWELVE
+EVOLUTION AND EVOLVING POPULATIONS
+217
+Evolution is a process that is not restricted to plants and animals.
+In fact, it is a universal phenomenon. All living organisms on
+earth, from bacteria to man, have undergone evolution.
+The term ‘ev
+--------------------------------------------------
+
