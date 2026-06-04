@@ -21,26 +21,16 @@ Greedy decoding, 128 tokens, averaged over 5 measured runs:
 ## Repository Structure
 
 ```
-├── train.py                    # QLoRA fine-tuning (4-bit NF4 + LoRA adapters)
-├── merge_model.py              # Merge LoRA adapter into base weights
-├── quantize_awq.py             # AWQ 4-bit quantization with calibration data
-│
-├── inference.py                # Unified benchmarking suite (Cases 1–6)
-├── vllm_bnb_colab.ipynb        # Google Colab notebook for Case 5 benchmark
-│
-├── outputs/                    # Generated quality comparison files & loss graph
-│   ├── quality_*.txt
-│   └── training_loss_graph.png
-│
+├── train.py                    # QLoRA fine-tuning script
+├── merge_model.py              # Model weights merging script
+├── quantize_awq.py             # AWQ 4-bit quantization script
+├── inference.py                # Unified benchmarking suite
+├── vllm_bnb_colab.ipynb        # Google Colab notebook
 ├── docs/                       # Research documentation
 │   ├── research_inference_benchmarks.md
 │   ├── vllm_ngram_speculative_decoding.md
 │   └── colab_vllm_setup.md
-│
-├── dataset/                    # Training data
-├── models/                     # Model weights (not tracked)
-├── final_models/               # LoRA adapter checkpoints (not tracked)
-└── final_tokenizers/           # Saved tokenizers (not tracked)
+├── dataset/                    # Training and validation dataset
 ```
 
 ## Quick Start
