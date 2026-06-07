@@ -61,8 +61,8 @@ The evaluation metrics used in this report are defined and calculated as follows
 
 2. **Time to First Token (TTFT, ms)**:
    * **Definition:** Tracks the latency before the serving engine sends the first generated token. This represents the responsiveness of the system.
-   * **Calculation:** The duration between the initiation of the request prompt ($t_{\text{request\_sent}}$) and the receipt of the first chunk of the generated token response ($t_{\text{first\_token}}$).
-     $$\text{TTFT} = t_{\text{first\_token}} - t_{\text{request\_sent}}$$
+   * **Calculation:** The duration between the initiation of the request prompt ($t_{\text{start}}$) and the receipt of the first chunk of the generated token response ($t_{\text{first}}$).
+     $$\text{TTFT} = t_{\text{first}} - t_{\text{start}}$$
 
 3. **Inter-Token Latency (ITL, ms/tok)**:
    * **Definition:** Tracks the average delay between successive token generations during decoding.
