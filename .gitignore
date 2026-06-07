@@ -23,3 +23,7 @@ uv.lock
 # OS files
 .DS_Store
 Thumbs.db
+
+# Extra output logs and traces
+outputs/responses_*.txt
+outputs/qwen-1.5b-awq/

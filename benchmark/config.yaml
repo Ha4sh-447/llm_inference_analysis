@@ -1,0 +1,59 @@
+dataset:
+  val_path: "dataset/val.json"
+  num_samples_quality: 50
+  num_samples_performance: 20
+
+workload:
+  max_tokens: 128
+  mixed_length: true
+  concurrency_performance: 4
+  concurrency_levels_scaling: [1, 2, 4, 8, 16]
+
+statistical:
+  repetitions: 3
+
+models:
+  fp16:
+    path: "./models/qwen-1.5b-merged"
+    served_model_name: "qwen-fp16"
+    quantization: "bf16"
+
+  awq:
+    path: "./models/qwen-1.5b-awq"
+    served_model_name: "qwen-awq"
+    quantization: "awq"
+
+  nf4:
+    path: "./models/qwen-1.5b-bnb-nf4"
+    served_model_name: "qwen-nf4"
+    quantization: "nf4"
+
+  fp8:
+    path: "./models/qwen-1.5b-fp8"
+    served_model_name: "qwen-fp8"
+    quantization: "fp8"
+
+  bnbint8:
+    path: "./models/qwen-1.5b-bnb-int8"
+    served_model_name: "qwen-int8"
+    quantization: "bnbint8"
+
+  aqlm:
+    path: "ISTA-DASLab/Qwen2.5-1.5B-Instruct-AQLM-2Bit-1x16"
+    served_model_name: "qwen-aqlm"
+    quantization: "aqlm"
+
+engines:
+  vllm:
+    enabled: true
+    api_url: "http://localhost:8000/v1/chat/completions"
+
+  sglang:
+    enabled: true
+    api_url: "http://localhost:30000/v1/chat/completions"
+
+judge:
+  enabled: false
+  api_url: "https://api.openai.com/v1/chat/completions"
+  model_name: "gpt-4o-mini"
+  api_key: "YOUR_OPENAI_API_KEY"

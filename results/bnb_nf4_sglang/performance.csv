@@ -1,0 +1,2 @@
+model,engine,concurrency,mixed_length,throughput_mean,throughput_std,throughput_ci95,ttft_mean,ttft_std,ttft_ci95,itl_mean,itl_std,itl_ci95,prefill_latency_ms,prefill_tps,decode_latency_ms,decode_tps,vram_peak_mean,vram_peak_std,vram_peak_ci95,gpu_util_avg,gpu_util_peak
+awq,sglang,4,True,11.505329673659501,0.42326723315015635,1.0515389596460758,228.48952458340742,82.2429574364236,204.31932152478603,82.54103728371479,1.5663931045224246,3.891450238818679,228.48952458340742,929.2025964383587,4714.224879900151,12.153711637138946,2.89453125,0.0,0.0,89.04908877952505,100.0
