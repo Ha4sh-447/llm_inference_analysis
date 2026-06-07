@@ -2,13 +2,6 @@
 
 A comprehensive research study on fine-tuning [Qwen2.5-1.5B](https://huggingface.co/Qwen/Qwen2.5-1.5B) for structured instructional generation, and systematically benchmarking its serving performance and generation quality across different post-training quantization (PTQ) formats (**FP16, AWQ, NF4, FP8**) on two high-performance inference engines: **vLLM** and **SGLang** under strict hardware limits.
 
-## Hardware & Software Environment
-* **Operating System:** Arch Linux (x86_64, rolling build)
-* **GPU Hardware:** NVIDIA GeForce RTX 3050 Laptop GPU (4 GB GDDR6 VRAM, 60W TGP)
-* **NVIDIA Driver Version:** 610.43.02
-* **CUDA Version:** CUDA 13.3 (System Driver) / CUDA 13.0 (PyTorch Runtime)
-* **Deep Learning Stack:** PyTorch 2.11.0+cu130 / vLLM v0.22.0 / SGLang v0.1.0
-* **VRAM Constraints:** Strict 4.0 GB physical VRAM limit. Running the baseline model in FP16 triggers immediate Out-of-Memory (OOM) errors, necessitating Post-Training Quantization (PTQ) for local serving.
 
 ## Research Objectives
 * **Quantization vs. Serving Engine Comparison:** The primary goal of this study is to evaluate how different quantization techniques (AWQ, NF4, FP8) affect model performance and quality when served under different inference engines (**vLLM** and **SGLang**). The focus is specifically on inference performance, latency, and scheduling efficiency differences between serving architectures, rather than the linguistic quality of the outputs.
@@ -58,6 +51,14 @@ Below is a comprehensive summary of the baseline performance and quality metrics
 │   └── challenges_loopholes_and_contradictions.md # Critique of theoretical vs practical findings
 ├── results/                          # Detailed metric logs across 13 test folders
 ```
+
+## Hardware & Software Environment
+* **Operating System:** Arch Linux
+* **GPU Hardware:** NVIDIA GeForce RTX 3050 Laptop GPU (4 GB GDDR6 VRAM, 60W TGP)
+* **NVIDIA Driver Version:** 610.43.02
+* **CUDA Version:** 13.3
+* **Deep Learning Stack:** PyTorch 2.11.0+cu130 / vLLM v0.22.0 / SGLang v0.1.0
+* **VRAM Constraints:** Strict 4.0 GB physical VRAM limit. Running the baseline model in FP16 triggers immediate Out-of-Memory (OOM) errors, necessitating Post-Training Quantization (PTQ) for local serving.
 
 ## Steps to Reproduce
 
